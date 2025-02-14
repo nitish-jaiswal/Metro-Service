@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CheckInController {
     private final CheckInService checkInService;
 
-    // ✅ Use Constructor Injection
+    // ✅ Use Constructor Injection here
     @Autowired
     public CheckInController(CheckInService checkInService) {
         this.checkInService = checkInService;
@@ -27,3 +27,7 @@ public class CheckInController {
         return ResponseEntity.ok(checkInService.checkIn(metroCard, station));
     }
 }
+
+
+
+
