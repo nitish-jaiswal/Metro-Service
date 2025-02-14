@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CheckInController {
     private final CheckInService checkInService;
 
-    // ✅ Use Constructor Injection here
+    // ✅ Use Constructor Injection here down
     @Autowired
     public CheckInController(CheckInService checkInService) {
         this.checkInService = checkInService;
